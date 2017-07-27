@@ -1,5 +1,7 @@
 <?php
 
+var_dump($argv);
+
 function tabuadaVariasLinhas($tabuada){
     return "$tabuada x 1 = ".($tabuada * 1)."\n".
         "$tabuada x 2 = ".($tabuada * 2)."\n".
@@ -48,12 +50,30 @@ function tabuadaDoWhile($tabuada){
     }while($numero <=10);
     return implode("\n", $linhas);
 }
-echo tabuadaDoWhile(8);
+//echo tabuadaDoWhile(8);
+
+
+function tabuadaGoTo($tabuada){
+$numero = 1;
+inicio:
+$linhas[] = "$tabuada x $numero = " . ($tabuada * $numero);
+if($numero <= 9){
+    $numero++;
+    goto inicio;
+}
+return implode("\n", $linhas);
+}
+
+//echo tabuadaGoTo(5);
+//echo "\n";
+
 
 function TabuadaForEach($tabuada){
     $lista = [1,2,3,4,5,6,7,8,9,10];
     foreach ($lista as $numero) {
         $linhas[] = "$tabuada x $numero = " . ($tabuada * $numero);
     }
+    return implode("\n", $linhas);
 }
-//echo TabuadaForEach(2); //NÃO IMPRIMIU NADA!!!!
+echo TabuadaForEach(2); 
+echo "\n";
