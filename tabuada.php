@@ -3,7 +3,7 @@ var_dump($argv);
 class Tabuada{
     public $estruturaDeRepeticao="For";
 function __construct($estruturaDeRepeticao){
-    $this->$estruturaDeRepeticao->$estruturaDeRepeticao
+    $this->estruturaDeRepeticao = $estruturaDeRepeticao;
 }
 
     function tabuadaVariasLinhas($tabuada){
@@ -96,5 +96,5 @@ function __construct($estruturaDeRepeticao){
 
     
 
-    echo $tabuada->getTabuada
+    echo $tabuada->getTabuada;
     echo "\n";
