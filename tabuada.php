@@ -1,8 +1,8 @@
 <?php
 var_dump($argv);
 class Tabuada{
-    public $estruturaDeRepeticao->"For";
-__construct($estruturaDeRepeticao){
+    public $estruturaDeRepeticao="For";
+function __construct($estruturaDeRepeticao){
     $this->$estruturaDeRepeticao->$estruturaDeRepeticao
 }
 
@@ -86,16 +86,15 @@ __construct($estruturaDeRepeticao){
     }
 
     function getForma(){
-        return $this->$estruturaDeRepeticao;
-
+        return $this->estruturaDeRepeticao;
     }
 
 }
 
-    function getTabuada
+    
     $tabuada = new Tabuada($arv[2]);
 
-    $minha_funcao="Tabuada".$argv[2];
+    
 
-    echo $tabuada->$minha_funcao($argv[1]);
+    echo $tabuada->getTabuada
     echo "\n";
